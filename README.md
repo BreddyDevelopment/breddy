@@ -1,2 +1,2 @@
-# breddy
-Breddy the Discord Bot
+### Breddy
+Breddy is the server management bot for Rouxl's Lab.
