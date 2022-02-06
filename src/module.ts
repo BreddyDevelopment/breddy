@@ -40,11 +40,14 @@ export class BotModule {
     readonly id:string;
     name:string;
     active:boolean;
-    constructor(manager:ModuleManager, id:string, name:string, active:boolean=true) {
+    description?:string;
+    hidden:boolean;
+    constructor(manager:ModuleManager, id:string, name:string, active:boolean=true, hidden:boolean=false) {
         this.manager=manager;
         this.id=id;
         this.name=name;
         this.active=active;
+        this.hidden=hidden;
     }
     setCallbacks(map:CallbackMap) {
         map.forEach((callback)=>{
